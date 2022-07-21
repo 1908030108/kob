@@ -5,10 +5,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 //前后端不分离写法
 @Controller
-@RequestMapping("/pk/")  //副目录
 public class IndexController {
 
-    @RequestMapping("Index/")
+    @RequestMapping("/")
     public  String index() {
         return "pk/Index.html";
     }
